@@ -1,0 +1,211 @@
+@import "base.less";
+
+#header{
+    display: flex;
+    background-color: #eee;
+    position: fixed;
+    top:0;
+    width: 100%;
+    max-width: 6.4rem;
+    .search-form{
+        flex: 1; 
+        margin-left: 0.05rem;
+        height: 0.44rem;
+        padding: 0.1rem 0.1rem;
+        .search{
+            width: 100%;
+            height: 0.26rem;    
+            border: 0.01rem solid #999;
+            border-radius: 0.05rem;
+            padding-left: 0.2rem;
+            font-size: 0.12rem;
+        }
+    }
+    .user{
+        display: block;
+        width: 0.44rem;
+        height: 0.44rem;
+        color: skyblue;
+        line-height: 0.44rem;
+        font-size: 0.14rem;
+    }
+}
+
+/*silde部分样式*/
+#slide{
+    margin-top: 0.44rem;
+    >a{
+        display: block;
+        >img{
+            width: 100%;
+        }
+    }
+}
+/*nav部分样式代码*/
+#nav{
+    margin-top: 0.1rem;
+    margin-bottom: 0.1rem;
+    >ul{
+        display: flex;
+        >li{
+            width: 20%;
+            height: 0.5rem;
+            >a{
+                display: block;
+                display: flex;     
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                >span{
+                    flex: 1;
+                    font-size: 0.12rem;
+                    &:first-of-type{
+                        width: 0.32rem;
+                        height: 0.32rem;
+                        border-radius: 50%;
+                        margin-bottom: 0.05rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*main部分样式代码*/
+#main{
+    padding: 0 0.05rem;
+    background-color: #eee;
+    .content{
+        margin-bottom: 0.03rem;
+        background-color: red;
+        display: flex;
+        >aside{
+            flex: 1;
+            border-right: 0.01rem solid #ccc;
+            >span{
+                display: block;
+                width: 100%;
+                height: 0.88rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color:#fff;
+                font-size: 0.2rem;
+            }
+        }
+        article{
+            flex: 2;
+            height: 0.88rem;
+            display: flex;
+            flex-wrap: wrap;
+            >a{
+                width: 50%;
+                border-right: 0.01rem solid #fff;
+                border-bottom: 0.01rem solid #fff;
+                color: #fff;
+                display: block;
+                line-height: 0.44rem;
+                text-align: center;
+                font-size: 0.14rem;
+                &:nth-child(2n){
+                    border-right:none;
+                }
+            }
+        }
+        &:nth-child(1){
+           border-radius: 0.1rem 0.1rem 0 0; 
+        }
+        &:nth-child(2){
+            background-color:skyblue; 
+        }
+        &:nth-child(3){
+            background-color:green;
+            border-radius:0 0 0.1rem 0.1rem;  
+        }
+    }
+    .card{
+        margin-top: 0.05rem;
+        border: 0.01rem solid #ccc;
+        border-radius: 0.05rem;
+        padding-bottom: 0.05rem;
+        >ul{
+            display: flex;
+            flex-wrap: wrap;
+            >li{
+                width: 20%;
+                height: 0.38rem;
+                >a{
+                    display: block;
+                    width: 100%;
+                    height: 0.38rem;
+                    font-size: 0.12rem;
+                    color: black;
+                    line-height: 0.58rem;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
+
+/*temai部分样式代码*/
+#temai{
+    width: 100%;
+    margin-top: 0.05rem;  
+    .temai-title{
+        padding-top: 0.2rem;
+        >h2{
+            color:red;
+            font-style: italic;
+            float: left;
+            padding-left: 0.1rem;
+        }
+        >a{
+            display: block;
+            float: right;
+            width: 0.6rem;
+            height: 0.2rem;
+            background-color: red;
+            border-radius: 0.1rem;
+            font-size: 0.14rem;
+            color: #fff;
+            text-align: center;
+            margin-right: 0.1rem;
+            margin-top: 0.07rem;         
+        }
+    }
+    .temai-content{
+        margin-top: 0.5rem;
+        display: flex;
+        padding-left: 0.05rem;
+        .left{
+            width: 1.17rem;
+            >a{
+                display: block;
+                >img{
+                    width: 1.17rem;
+                    height: 1.17rem;
+                }
+            }
+            .sales-title{
+                overflow: hidden;
+                text-overflow: ellipsis;
+                display: -webkit-box;
+                -webkit-box-orient: vertical;
+                -webkit-line-clamp: 3;             
+                width: 1.17rem;
+                font-size: 0.12rem;
+                padding-top: 0.05rem;
+            }
+            p{
+                padding-top: 0.05rem;
+                strong{
+                    color: red;
+                }
+            }
+        }
+        .right{
+            flex: 1;
+        }
+    }
+}
